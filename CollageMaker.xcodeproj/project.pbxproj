@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D02E9A31A1E32E60038E75D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D02E9A21A1E32E60038E75D /* Foundation.framework */; };
+		9D02E9A51A1E32E60038E75D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D02E9A41A1E32E60038E75D /* CoreGraphics.framework */; };
+		9D02E9A71A1E32E60038E75D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D02E9A61A1E32E60038E75D /* UIKit.framework */; };
+		9D02E9AD1A1E32E60038E75D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D02E9AB1A1E32E60038E75D /* InfoPlist.strings */; };
+		9D02E9AF1A1E32E60038E75D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D02E9AE1A1E32E60038E75D /* main.m */; };
+		9D02E9B31A1E32E60038E75D /* TPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D02E9B21A1E32E60038E75D /* TPAppDelegate.m */; };
+		9D02E9B61A1E32E60038E75D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D02E9B41A1E32E60038E75D /* Main.storyboard */; };
+		9D02E9B91A1E32E60038E75D /* TPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D02E9B81A1E32E60038E75D /* TPViewController.m */; };
+		9D02E9BB1A1E32E60038E75D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D02E9BA1A1E32E60038E75D /* Images.xcassets */; };
+		9D02E9C21A1E32E60038E75D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D02E9C11A1E32E60038E75D /* XCTest.framework */; };
+		9D02E9C31A1E32E60038E75D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D02E9A21A1E32E60038E75D /* Foundation.framework */; };
+		9D02E9C41A1E32E60038E75D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D02E9A61A1E32E60038E75D /* UIKit.framework */; };
+		9D02E9CC1A1E32E60038E75D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D02E9CA1A1E32E60038E75D /* InfoPlist.strings */; };
+		9D02E9CE1A1E32E60038E75D /* CollageMakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D02E9CD1A1E32E60038E75D /* CollageMakerTests.m */; };
+		9DF715CF1A24B84700A87905 /* SelectionOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF715BD1A24B84700A87905 /* SelectionOverlay.png */; };
+		9DF715D01A24B84700A87905 /* SelectionOverlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF715BE1A24B84700A87905 /* SelectionOverlay@2x.png */; };
+		9DF715D11A24B84700A87905 /* SelectionOverlay~iOS7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF715BF1A24B84700A87905 /* SelectionOverlay~iOS7.png */; };
+		9DF715D21A24B84700A87905 /* SelectionOverlay~iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF715C01A24B84700A87905 /* SelectionOverlay~iOS7@2x.png */; };
+		9DF715D31A24B84700A87905 /* VideoOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF715C11A24B84700A87905 /* VideoOverlay.png */; };
+		9DF715D41A24B84700A87905 /* VideoOverlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF715C21A24B84700A87905 /* VideoOverlay@2x.png */; };
+		9DF715D51A24B84700A87905 /* ZCAlbumPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF715C41A24B84700A87905 /* ZCAlbumPickerController.m */; };
+		9DF715D61A24B84700A87905 /* ZCAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF715C61A24B84700A87905 /* ZCAsset.m */; };
+		9DF715D71A24B84700A87905 /* ZCAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF715C81A24B84700A87905 /* ZCAssetCell.m */; };
+		9DF715D81A24B84700A87905 /* ZCAssetTablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF715CA1A24B84700A87905 /* ZCAssetTablePicker.m */; };
+		9DF715D91A24B84700A87905 /* ZCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF715CC1A24B84700A87905 /* ZCHelper.m */; };
+		9DF715DA1A24B84700A87905 /* ZCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF715CE1A24B84700A87905 /* ZCImagePickerController.m */; };
+		9DF715DC1A24B88000A87905 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF715DB1A24B88000A87905 /* AssetsLibrary.framework */; };
+		9DF715DE1A24B88C00A87905 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF715DD1A24B88C00A87905 /* QuartzCore.framework */; };
+		9DFA2EFE1A1F9115007EB1BD /* TPCollageResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA2EFD1A1F9115007EB1BD /* TPCollageResultViewController.m */; };
+		9DFA2F011A1FA2A9007EB1BD /* TPLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA2F001A1FA2A9007EB1BD /* TPLoadingView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D02E9C51A1E32E60038E75D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D02E9971A1E32E60038E75D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D02E99E1A1E32E60038E75D;
+			remoteInfo = CollageMaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D02E99F1A1E32E60038E75D /* CollageMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollageMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D02E9A21A1E32E60038E75D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9D02E9A41A1E32E60038E75D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9D02E9A61A1E32E60038E75D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9D02E9AA1A1E32E60038E75D /* CollageMaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollageMaker-Info.plist"; sourceTree = "<group>"; };
+		9D02E9AC1A1E32E60038E75D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9D02E9AE1A1E32E60038E75D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D02E9B01A1E32E60038E75D /* CollageMaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CollageMaker-Prefix.pch"; sourceTree = "<group>"; };
+		9D02E9B11A1E32E60038E75D /* TPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPAppDelegate.h; sourceTree = "<group>"; };
+		9D02E9B21A1E32E60038E75D /* TPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPAppDelegate.m; sourceTree = "<group>"; };
+		9D02E9B51A1E32E60038E75D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D02E9B71A1E32E60038E75D /* TPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPViewController.h; sourceTree = "<group>"; };
+		9D02E9B81A1E32E60038E75D /* TPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPViewController.m; sourceTree = "<group>"; };
+		9D02E9BA1A1E32E60038E75D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9D02E9C01A1E32E60038E75D /* CollageMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollageMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D02E9C11A1E32E60038E75D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9D02E9C91A1E32E60038E75D /* CollageMakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollageMakerTests-Info.plist"; sourceTree = "<group>"; };
+		9D02E9CB1A1E32E60038E75D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9D02E9CD1A1E32E60038E75D /* CollageMakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollageMakerTests.m; sourceTree = "<group>"; };
+		9D02E9D71A1E38790038E75D /* TPGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPGlobals.h; sourceTree = "<group>"; };
+		9DF715BD1A24B84700A87905 /* SelectionOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectionOverlay.png; sourceTree = "<group>"; };
+		9DF715BE1A24B84700A87905 /* SelectionOverlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SelectionOverlay@2x.png"; sourceTree = "<group>"; };
+		9DF715BF1A24B84700A87905 /* SelectionOverlay~iOS7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SelectionOverlay~iOS7.png"; sourceTree = "<group>"; };
+		9DF715C01A24B84700A87905 /* SelectionOverlay~iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SelectionOverlay~iOS7@2x.png"; sourceTree = "<group>"; };
+		9DF715C11A24B84700A87905 /* VideoOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VideoOverlay.png; sourceTree = "<group>"; };
+		9DF715C21A24B84700A87905 /* VideoOverlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VideoOverlay@2x.png"; sourceTree = "<group>"; };
+		9DF715C31A24B84700A87905 /* ZCAlbumPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCAlbumPickerController.h; sourceTree = "<group>"; };
+		9DF715C41A24B84700A87905 /* ZCAlbumPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCAlbumPickerController.m; sourceTree = "<group>"; };
+		9DF715C51A24B84700A87905 /* ZCAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCAsset.h; sourceTree = "<group>"; };
+		9DF715C61A24B84700A87905 /* ZCAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCAsset.m; sourceTree = "<group>"; };
+		9DF715C71A24B84700A87905 /* ZCAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCAssetCell.h; sourceTree = "<group>"; };
+		9DF715C81A24B84700A87905 /* ZCAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCAssetCell.m; sourceTree = "<group>"; };
+		9DF715C91A24B84700A87905 /* ZCAssetTablePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCAssetTablePicker.h; sourceTree = "<group>"; };
+		9DF715CA1A24B84700A87905 /* ZCAssetTablePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCAssetTablePicker.m; sourceTree = "<group>"; };
+		9DF715CB1A24B84700A87905 /* ZCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCHelper.h; sourceTree = "<group>"; };
+		9DF715CC1A24B84700A87905 /* ZCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCHelper.m; sourceTree = "<group>"; };
+		9DF715CD1A24B84700A87905 /* ZCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCImagePickerController.h; sourceTree = "<group>"; };
+		9DF715CE1A24B84700A87905 /* ZCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCImagePickerController.m; sourceTree = "<group>"; };
+		9DF715DB1A24B88000A87905 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		9DF715DD1A24B88C00A87905 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9DFA2EFC1A1F9115007EB1BD /* TPCollageResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCollageResultViewController.h; sourceTree = "<group>"; };
+		9DFA2EFD1A1F9115007EB1BD /* TPCollageResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPCollageResultViewController.m; sourceTree = "<group>"; };
+		9DFA2EFF1A1FA2A9007EB1BD /* TPLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLoadingView.h; sourceTree = "<group>"; };
+		9DFA2F001A1FA2A9007EB1BD /* TPLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLoadingView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D02E99C1A1E32E60038E75D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF715DE1A24B88C00A87905 /* QuartzCore.framework in Frameworks */,
+				9DF715DC1A24B88000A87905 /* AssetsLibrary.framework in Frameworks */,
+				9D02E9A51A1E32E60038E75D /* CoreGraphics.framework in Frameworks */,
+				9D02E9A71A1E32E60038E75D /* UIKit.framework in Frameworks */,
+				9D02E9A31A1E32E60038E75D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D02E9BD1A1E32E60038E75D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D02E9C21A1E32E60038E75D /* XCTest.framework in Frameworks */,
+				9D02E9C41A1E32E60038E75D /* UIKit.framework in Frameworks */,
+				9D02E9C31A1E32E60038E75D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D02E9961A1E32E60038E75D = {
+			isa = PBXGroup;
+			children = (
+				9D02E9A81A1E32E60038E75D /* CollageMaker */,
+				9D02E9C71A1E32E60038E75D /* CollageMakerTests */,
+				9D02E9A11A1E32E60038E75D /* Frameworks */,
+				9D02E9A01A1E32E60038E75D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D02E9A01A1E32E60038E75D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D02E99F1A1E32E60038E75D /* CollageMaker.app */,
+				9D02E9C01A1E32E60038E75D /* CollageMakerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D02E9A11A1E32E60038E75D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DF715DD1A24B88C00A87905 /* QuartzCore.framework */,
+				9DF715DB1A24B88000A87905 /* AssetsLibrary.framework */,
+				9D02E9A21A1E32E60038E75D /* Foundation.framework */,
+				9D02E9A41A1E32E60038E75D /* CoreGraphics.framework */,
+				9D02E9A61A1E32E60038E75D /* UIKit.framework */,
+				9D02E9C11A1E32E60038E75D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D02E9A81A1E32E60038E75D /* CollageMaker */ = {
+			isa = PBXGroup;
+			children = (
+				9DFDB0391A236F1600DB1084 /* ViewControllers */,
+				9DFDB03A1A236F2A00DB1084 /* Components */,
+				9D02E9B11A1E32E60038E75D /* TPAppDelegate.h */,
+				9D02E9B21A1E32E60038E75D /* TPAppDelegate.m */,
+				9D02E9A91A1E32E60038E75D /* Supporting Files */,
+			);
+			path = CollageMaker;
+			sourceTree = "<group>";
+		};
+		9D02E9A91A1E32E60038E75D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D02E9B41A1E32E60038E75D /* Main.storyboard */,
+				9D02E9BA1A1E32E60038E75D /* Images.xcassets */,
+				9D02E9D71A1E38790038E75D /* TPGlobals.h */,
+				9D02E9AA1A1E32E60038E75D /* CollageMaker-Info.plist */,
+				9D02E9AB1A1E32E60038E75D /* InfoPlist.strings */,
+				9D02E9AE1A1E32E60038E75D /* main.m */,
+				9D02E9B01A1E32E60038E75D /* CollageMaker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D02E9C71A1E32E60038E75D /* CollageMakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D02E9CD1A1E32E60038E75D /* CollageMakerTests.m */,
+				9D02E9C81A1E32E60038E75D /* Supporting Files */,
+			);
+			path = CollageMakerTests;
+			sourceTree = "<group>";
+		};
+		9D02E9C81A1E32E60038E75D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D02E9C91A1E32E60038E75D /* CollageMakerTests-Info.plist */,
+				9D02E9CA1A1E32E60038E75D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DF715BB1A24B81A00A87905 /* ZCImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				9DF715BC1A24B84700A87905 /* Images */,
+				9DF715C31A24B84700A87905 /* ZCAlbumPickerController.h */,
+				9DF715C41A24B84700A87905 /* ZCAlbumPickerController.m */,
+				9DF715C51A24B84700A87905 /* ZCAsset.h */,
+				9DF715C61A24B84700A87905 /* ZCAsset.m */,
+				9DF715C71A24B84700A87905 /* ZCAssetCell.h */,
+				9DF715C81A24B84700A87905 /* ZCAssetCell.m */,
+				9DF715C91A24B84700A87905 /* ZCAssetTablePicker.h */,
+				9DF715CA1A24B84700A87905 /* ZCAssetTablePicker.m */,
+				9DF715CB1A24B84700A87905 /* ZCHelper.h */,
+				9DF715CC1A24B84700A87905 /* ZCHelper.m */,
+				9DF715CD1A24B84700A87905 /* ZCImagePickerController.h */,
+				9DF715CE1A24B84700A87905 /* ZCImagePickerController.m */,
+			);
+			name = ZCImagePickerController;
+			sourceTree = "<group>";
+		};
+		9DF715BC1A24B84700A87905 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9DF715BD1A24B84700A87905 /* SelectionOverlay.png */,
+				9DF715BE1A24B84700A87905 /* SelectionOverlay@2x.png */,
+				9DF715BF1A24B84700A87905 /* SelectionOverlay~iOS7.png */,
+				9DF715C01A24B84700A87905 /* SelectionOverlay~iOS7@2x.png */,
+				9DF715C11A24B84700A87905 /* VideoOverlay.png */,
+				9DF715C21A24B84700A87905 /* VideoOverlay@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9DFDB0391A236F1600DB1084 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D02E9B71A1E32E60038E75D /* TPViewController.h */,
+				9D02E9B81A1E32E60038E75D /* TPViewController.m */,
+				9DFA2EFC1A1F9115007EB1BD /* TPCollageResultViewController.h */,
+				9DFA2EFD1A1F9115007EB1BD /* TPCollageResultViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9DFDB03A1A236F2A00DB1084 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9DF715BB1A24B81A00A87905 /* ZCImagePickerController */,
+				9DFA2EFF1A1FA2A9007EB1BD /* TPLoadingView.h */,
+				9DFA2F001A1FA2A9007EB1BD /* TPLoadingView.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D02E99E1A1E32E60038E75D /* CollageMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D02E9D11A1E32E60038E75D /* Build configuration list for PBXNativeTarget "CollageMaker" */;
+			buildPhases = (
+				9D02E99B1A1E32E60038E75D /* Sources */,
+				9D02E99C1A1E32E60038E75D /* Frameworks */,
+				9D02E99D1A1E32E60038E75D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollageMaker;
+			productName = CollageMaker;
+			productReference = 9D02E99F1A1E32E60038E75D /* CollageMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D02E9BF1A1E32E60038E75D /* CollageMakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D02E9D41A1E32E60038E75D /* Build configuration list for PBXNativeTarget "CollageMakerTests" */;
+			buildPhases = (
+				9D02E9BC1A1E32E60038E75D /* Sources */,
+				9D02E9BD1A1E32E60038E75D /* Frameworks */,
+				9D02E9BE1A1E32E60038E75D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D02E9C61A1E32E60038E75D /* PBXTargetDependency */,
+			);
+			name = CollageMakerTests;
+			productName = CollageMakerTests;
+			productReference = 9D02E9C01A1E32E60038E75D /* CollageMakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D02E9971A1E32E60038E75D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Test Project";
+				TargetAttributes = {
+					9D02E9BF1A1E32E60038E75D = {
+						TestTargetID = 9D02E99E1A1E32E60038E75D;
+					};
+				};
+			};
+			buildConfigurationList = 9D02E99A1A1E32E60038E75D /* Build configuration list for PBXProject "CollageMaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D02E9961A1E32E60038E75D;
+			productRefGroup = 9D02E9A01A1E32E60038E75D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D02E99E1A1E32E60038E75D /* CollageMaker */,
+				9D02E9BF1A1E32E60038E75D /* CollageMakerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D02E99D1A1E32E60038E75D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D02E9BB1A1E32E60038E75D /* Images.xcassets in Resources */,
+				9D02E9AD1A1E32E60038E75D /* InfoPlist.strings in Resources */,
+				9DF715D41A24B84700A87905 /* VideoOverlay@2x.png in Resources */,
+				9DF715D21A24B84700A87905 /* SelectionOverlay~iOS7@2x.png in Resources */,
+				9DF715D11A24B84700A87905 /* SelectionOverlay~iOS7.png in Resources */,
+				9DF715D31A24B84700A87905 /* VideoOverlay.png in Resources */,
+				9D02E9B61A1E32E60038E75D /* Main.storyboard in Resources */,
+				9DF715CF1A24B84700A87905 /* SelectionOverlay.png in Resources */,
+				9DF715D01A24B84700A87905 /* SelectionOverlay@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D02E9BE1A1E32E60038E75D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D02E9CC1A1E32E60038E75D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D02E99B1A1E32E60038E75D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF715DA1A24B84700A87905 /* ZCImagePickerController.m in Sources */,
+				9DFA2F011A1FA2A9007EB1BD /* TPLoadingView.m in Sources */,
+				9DF715D61A24B84700A87905 /* ZCAsset.m in Sources */,
+				9D02E9B91A1E32E60038E75D /* TPViewController.m in Sources */,
+				9DF715D51A24B84700A87905 /* ZCAlbumPickerController.m in Sources */,
+				9DF715D91A24B84700A87905 /* ZCHelper.m in Sources */,
+				9D02E9B31A1E32E60038E75D /* TPAppDelegate.m in Sources */,
+				9DF715D71A24B84700A87905 /* ZCAssetCell.m in Sources */,
+				9D02E9AF1A1E32E60038E75D /* main.m in Sources */,
+				9DF715D81A24B84700A87905 /* ZCAssetTablePicker.m in Sources */,
+				9DFA2EFE1A1F9115007EB1BD /* TPCollageResultViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D02E9BC1A1E32E60038E75D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D02E9CE1A1E32E60038E75D /* CollageMakerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D02E9C61A1E32E60038E75D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D02E99E1A1E32E60038E75D /* CollageMaker */;
+			targetProxy = 9D02E9C51A1E32E60038E75D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D02E9AB1A1E32E60038E75D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D02E9AC1A1E32E60038E75D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9D02E9B41A1E32E60038E75D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D02E9B51A1E32E60038E75D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D02E9CA1A1E32E60038E75D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D02E9CB1A1E32E60038E75D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D02E9CF1A1E32E60038E75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9D02E9D01A1E32E60038E75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D02E9D21A1E32E60038E75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CollageMaker/CollageMaker-Prefix.pch";
+				INFOPLIST_FILE = "CollageMaker/CollageMaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9D02E9D31A1E32E60038E75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CollageMaker/CollageMaker-Prefix.pch";
+				INFOPLIST_FILE = "CollageMaker/CollageMaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9D02E9D51A1E32E60038E75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CollageMaker.app/CollageMaker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CollageMaker/CollageMaker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CollageMakerTests/CollageMakerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9D02E9D61A1E32E60038E75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CollageMaker.app/CollageMaker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CollageMaker/CollageMaker-Prefix.pch";
+				INFOPLIST_FILE = "CollageMakerTests/CollageMakerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D02E99A1A1E32E60038E75D /* Build configuration list for PBXProject "CollageMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D02E9CF1A1E32E60038E75D /* Debug */,
+				9D02E9D01A1E32E60038E75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D02E9D11A1E32E60038E75D /* Build configuration list for PBXNativeTarget "CollageMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D02E9D21A1E32E60038E75D /* Debug */,
+				9D02E9D31A1E32E60038E75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D02E9D41A1E32E60038E75D /* Build configuration list for PBXNativeTarget "CollageMakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D02E9D51A1E32E60038E75D /* Debug */,
+				9D02E9D61A1E32E60038E75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D02E9971A1E32E60038E75D /* Project object */;
+}
